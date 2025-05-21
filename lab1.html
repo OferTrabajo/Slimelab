@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Lab 1 - Slime Web</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+  </head>
+  <body class="main-layout">
+    <!-- header -->
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-3 col logo_section">
+              <div class="full center-desk">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/logo.png" alt="Logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 offset-md-1">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbars"
+                  aria-controls="navbars"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="lab1.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lab2.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lab3.html">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Preguntas</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr
+      style="
+        margin-top: 0;
+        border: none;
+        height: 3px;
+        background-color: #04978d;
+      "
+    />
+    <!-- Lab1 Content -->
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          Práctica 1: <span class="green">Estequiometría y Masa del Slime</span>
+        </h2>
+        <!-- Objetivo -->
+        <div class="mb-5">
+          <h3>Objetivo específico</h3>
+          <ol>
+            <li>
+              <strong>1. </strong> Cuantificar el rendimiento experimental del
+              slime para cada proporción de PVA empleada (2 g, 4 g y 6 g) y
+              comparar esos valores con el rendimiento teórico calculado
+              mediante estequiometría.
+            </li>
+            <li>
+              <strong> 2.</strong> Establecer la correlación entre la masa del
+              slime obtenido y su densidad aparente, midiendo el volumen de
+              desplazamiento y calculando la densidad en kg/m³ para cada
+              muestra.
+            </li>
+            <li>
+              <strong> 3.</strong> Evaluar el efecto de la variación de PVA en
+              la viscosidad indirecta (diámetro de expansión entre placas de
+              vidrio) y en la viscosidad dinámica (tiempo de caída de la
+              varilla), para caracterizar la resistencia al flujo de cada
+              formulación de slime.
+            </li>
+          </ol>
+        </div>
+        <!-- Síntesis -->
+        <div class="mb-5">
+          <h3>Síntesis</h3>
+          <p>
+            La práctica de laboratorio tuvo como objetivo aplicar los principios
+            de la estequiometría para analizar cómo la variación en la cantidad
+            de alcohol polivinílico influye en las propiedades del slime formado
+            mediante su reacción con una solución de bórax. Para ello, se
+            prepararon tres muestras utilizando 2 g, 4 g y 6 g de PVA
+            respectivamente, manteniendo constante el volumen de solución de
+            bórax, el cuál era cómo lo más y se evaluaron características como
+            masa, viscosidad, densidad, y textura. Durante el proceso, se midió
+            la masa del slime obtenido, se calculó el rendimiento experimental
+            frente al teórico, y se estudiaron las propiedades fisicas del
+            slimemediante dos métodos: una medición indirecta de viscosidad,
+            basada en la expansión del slime entre placas de vidrio, y una
+            medición dinámica, observando el tiempo de caída de una varilla a
+            través del gel. Los resultados mostraron que al aumentar la cantidad
+            de PVA, el slime se volvió más denso, y viscoso. La viscosidad
+            dinámica fue significativamente mayor en la muestra con 6 g de PVA,
+            indicando una mayor reticulación. En todos los casos, los
+            rendimientos superaron ligeramente el 100 %, lo que sugiere posibles
+            errores experimentales como exceso de agua, adición extra de anilina
+            o impurezas.
+          </p>
+        </div>
+        <!-- Materiales -->
+        <div class="mb-5">
+          <h3>Reactivos y Materiales</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">Bórax</li>
+                <li class="list-group-item">Alcohol polivinílico (PVA)</li>
+                <li class="list-group-item">Agua destilada</li>
+                <li class="list-group-item">
+                  Beaker 250 mL (4), Beaker 100 mL (3)
+                </li>
+                <li class="list-group-item">
+                  Plancha de calentamiento, agitador magnético
+                </li>
+                <li class="list-group-item">
+                  Balanza analítica, probetas, varillas, placas de vidrio,
+                  anilina
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="images/proc1.jpeg"
+                alt="Materiales Lab1"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Procedimiento -->
+        <div class="mb-5">
+          <h3>Procedimiento</h3>
+          <ol>
+            <li>
+              Preparar solución de bórax: pesar 1,0 g, disolver en 100 mL agua a
+              50 °C. Registrar disolución.
+            </li>
+            <li>
+              Preparar 3 soluciones de PVA (2, 4 y 6 g en 60 mL agua a 85 °C).
+              Registrar tiempos de disolución fileciteturn5file1.
+            </li>
+            <li>
+              Añadir 12 mL de bórax a cada PVA, agitar y observar formación de
+              gel.
+            </li>
+            <li>
+              Separar slime, tarar masa del beaker+slime y determinar masa neta
+              restando peso de beaker.
+            </li>
+            <li>
+              Medir viscosidad indirecta (expansión entre placas) y dinámica
+              (caída de varilla).
+            </li>
+          </ol>
+          <div class="row text-center mt-3">
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/proc2.jpeg"
+                alt="Paso 1 Lab1"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/proc3.jpeg"
+                alt="Paso 2 Lab1"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/proc4.jpeg"
+                alt="Paso 3 Lab1"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Registro soluciones de PVA -->
+        <div class="mb-5">
+          <h3>Registro Soluciones de PVA</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Muestra</th>
+                  <th>Masa beaker vacío (g)</th>
+                  <th>Masa PVA (g)</th>
+                  <th>Tiempo disolución</th>
+                  <th>Homogéneo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>48.38</td>
+                  <td>2</td>
+                  <td>8 min 30 s</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>48.38</td>
+                  <td>4</td>
+                  <td>13 min 40 s</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>48.38</td>
+                  <td>6</td>
+                  <td>15 min</td>
+                  <td>Sí</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Preparación del Slime -->
+        <div class="mb-5">
+          <h3>Preparación del Slime</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Muestra</th>
+                  <th>Vol. PVA (mL)</th>
+                  <th>Vol. bórax (mL)</th>
+                  <th>Observación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>12</td>
+                  <td>Muy transparente y pegajoso, liviano.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>8</td>
+                  <td>12</td>
+                  <td>Menos transparente, menos pegajoso.</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>16</td>
+                  <td>12</td>
+                  <td>Menos pegajoso, más denso.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Pesaje Final -->
+        <div class="mb-5">
+          <h3>Pesaje Final</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Muestra</th>
+                  <th>Masa total (g)</th>
+                  <th>Masa slime (g)</th>
+                  <th>Masa slime (kg)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>113.46</td>
+                  <td>65.38</td>
+                  <td>0.0653</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>114.11</td>
+                  <td>65.73</td>
+                  <td>0.0657</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>115.19</td>
+                  <td>66.81</td>
+                  <td>0.0668</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Propiedades -->
+        <div class="mb-5">
+          <h3>Propiedades del Slime</h3>
+          <h5>Viscosidad Indirecta</h5>
+          <table class="table table-bordered text-center mb-3">
+            <thead>
+              <tr>
+                <th>Muestra</th>
+                <th>Masa (g)</th>
+                <th>Diámetro (cm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>65.38</td>
+                <td>4.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>65.73</td>
+                <td>3.60</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>66.81</td>
+                <td>3.20</td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>Viscosidad Directa</h5>
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th>Muestra</th>
+                <th>Fuerza (N)</th>
+                <th>Densidad (kg/m³)</th>
+                <th>Tiempo (s)</th>
+                <th>Altura (m)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>0.63994</td>
+                <td>1.08833</td>
+                <td>52</td>
+                <td>0.035</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>0.6438</td>
+                <td>1.0950</td>
+                <td>80</td>
+                <td>0.034</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>0.6546</td>
+                <td>1.1130</td>
+                <td>150</td>
+                <td>0.032</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Conclusiones -->
+        <div class="mb-5">
+          <h3>Conclusiones</h3>
+          <p>
+            El experimento demostró que al aumentar la cantidad de PVA, la
+            estructura del slime es más compacta y viscosa, aplicando
+            estequiometría y analizando entrecruzamiento molecular. Los
+            rendimientos confirmaron la precisión de los cálculos, y las
+            variaciones menores se atribuyeron a exceso de agua o impurezas
+            fileciteturn4file0.
+          </p>
+        </div>
+        <!-- Bibliografía -->
+        <div class="mb-5">
+          <h3>Referencias</h3>
+          <ul>
+            <li>
+              6 formas de hacer Slime Casero. Gobierno de la Ciudad Autónoma de
+              Buenos Aires. fileciteturn4file0
+            </li>
+            <li>
+              The Sci Guys. The Sci Guys: Science At Home – Exploring Polymers
+              by Making Borax Ooze. YouTube. fileciteturn4file0
+            </li>
+          </ul>
+        </div>
+        <!-- Descarga PDF -->
+        <div class="text-center mb-5">
+          <a href="documents/Laboratorio1.pdf" class="btn btn-primary"
+            >Descargar Informe PDF</a
+          >
+        </div>
+
+        <div class="text-center mb-5">
+          <a href="documents/PosterLab1.pdf" class="btn btn-primary"
+            >Descargar Poster</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Copiar contenido de footer de index.html -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

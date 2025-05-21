@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Lab 1 - Slime Web</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+  </head>
+  <body class="main-layout">
+    <!-- header -->
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-3 col logo_section">
+              <div class="full center-desk">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/logo.png" alt="Logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 offset-md-1">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbars"
+                  aria-controls="navbars"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lab1.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lab2.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="lab3.html">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Preguntas</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr
+      style="
+        margin-top: 0;
+        border: none;
+        height: 3px;
+        background-color: #04978d;
+      "
+    />
+    <!-- Lab3 Content -->
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          Práctica 3: <span class="green">Influencia del pH</span>
+        </h2>
+
+        <!-- Objetivo General -->
+        <div class="mb-5">
+          <h3>Objetivo General</h3>
+          <p>
+            Analizar el efecto de sustancias ácidas y básicas sobre las
+            propiedades del slime, estableciendo cómo el pH influye en la
+            reticulación y fluidez del material.
+          </p>
+        </div>
+
+        <!-- Objetivos Específicos -->
+        <div class="mb-5">
+          <h3>Objetivos Específicos</h3>
+          <ol>
+            <li>
+              Relacionar la fluidez del slime con el grado de reticulación en
+              función del pH, mediante la prueba de fluidez en superficie
+              inclinada.
+            </li>
+            <li>
+              Explicar el papel de los iones H₃O⁺ y OH⁻ en la reticulación del
+              PVA-bórax a partir de los datos experimentales.
+            </li>
+            <li>
+              Comparar la apariencia, textura y color del slime en condiciones
+              ácidas, neutras y básicas usando indicador de naranja de metilo.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Información Conceptual -->
+        <div class="mb-5">
+          <h3>Información Conceptual</h3>
+          <p>
+            El slime se forma por la reticulación del PVA con bórax en medio
+            acuoso. Los iones H₃O⁺ y OH⁻ afectan este equilibrio, modificando la
+            formación de enlaces cruzados y, por ende, la viscosidad y fluidez
+            del gel fileciteturn7file1.
+          </p>
+        </div>
+
+        <!-- Reactivos y Materiales -->
+        <div class="mb-5">
+          <h3>Reactivos y Materiales</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">Bórax</li>
+                <li class="list-group-item">Alcohol polivinílico (PVA)</li>
+                <li class="list-group-item">Agua destilada</li>
+                <li class="list-group-item">HCl 0.5 M y NaOH 0.5 M</li>
+                <li class="list-group-item">Indicador naranja de metilo</li>
+                <li class="list-group-item">
+                  Beakers, probetas, varillas, balanza analítica
+                </li>
+                <li class="list-group-item">pH-metro y tiras de pH</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="images/materials3.jpg"
+                alt="Materiales Lab3"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Metodología -->
+        <div class="mb-5">
+          <h3>Metodología</h3>
+          <ol>
+            <li>
+              Preparar solución de bórax 1% m/m (0.7 g bórax en 69.3 g agua) y
+              medir pH al enfriar fileciteturn7file1.
+            </li>
+            <li>
+              Disolver 5.005 g de PVA en 59.995 g de agua a 85 °C para tres
+              muestras, registrar tiempo de disolución.
+            </li>
+            <li>
+              Formar slime añadiendo 15 mL de bórax a cada PVA; para muestra 2
+              añadir 3 mL NaOH, para muestra 3 añadir 3 mL HCl, registrar color
+              con indicador.
+            </li>
+            <li>
+              Realizar prueba de fluidez: dejar caer el slime desde 10 cm y
+              medir tiempo de recorrido de 10 cm en superficie limpia.
+            </li>
+            <li>
+              Observar textura y color bajo luz natural y registrar diferencias
+              entre muestras.
+            </li>
+          </ol>
+          <div class="row text-center mt-3">
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/procedure3a.jpg"
+                alt="Preparación bórax"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/procedure3b.jpg"
+                alt="Formulación PVA"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="images/procedure3c.jpg"
+                alt="Prueba de fluidez"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Resultados y Análisis -->
+        <div class="mb-5">
+          <h3>Resultados y Análisis</h3>
+          <div class="table-responsive mb-3">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Muestra</th>
+                  <th>pH</th>
+                  <th>Tiempo fluidez (s)</th>
+                  <th>Observación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 (neutro)</td>
+                  <td>7</td>
+                  <td>130</td>
+                  <td>Alta densidad, fluidez lenta</td>
+                </tr>
+                <tr>
+                  <td>2 (básico)</td>
+                  <td>9</td>
+                  <td>360</td>
+                  <td>Más viscosa, fragmentación</td>
+                </tr>
+                <tr>
+                  <td>3 (ácido)</td>
+                  <td>3</td>
+                  <td>N/A</td>
+                  <td>Muy líquida, no forma gel</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img
+                src="images/results3a.jpg"
+                alt="Resultados pH"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="images/results3b.jpg"
+                alt="Resultados textura"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Comparación Teoría vs. Experimento -->
+        <div class="mb-5">
+          <h3>Comparación Teoría vs. Experimento</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead class="thead-light">
+                <tr>
+                  <th>Condición (pH)</th>
+                  <th>Valor Teórico de Tiempo de Fluidez (s)</th>
+                  <th>Valor Experimental (s)</th>
+                  <th>Diferencia (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>7 (neutro)</td>
+                  <td>120</td>
+                  <td>130</td>
+                  <td>+8.3 %</td>
+                </tr>
+                <tr>
+                  <td>9 (básico)</td>
+                  <td>300</td>
+                  <td>360</td>
+                  <td>+20.0 %</td>
+                </tr>
+                <tr>
+                  <td>3 (ácido)</td>
+                  <td>∞ (no gelifica)</td>
+                  <td>N/A</td>
+                  <td>–</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small text-muted">
+            Valores teóricos basados en modelos de viscosidad para polímeros
+            reticulados
+            [oai_citation:0‡Laboratorio3.pdf](file-service://file-RVRfStUH9pJYrNLK87JFeL).
+          </p>
+        </div>
+
+        <!-- Análisis de Errores y Mejoras -->
+        <div class="mb-5">
+          <h3>Análisis de Errores y Mejoras</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead class="thead-light">
+                <tr>
+                  <th>Fuente de Error</th>
+                  <th>Impacto en Resultados</th>
+                  <th>Mejora Propuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Calibración del pH-metro</td>
+                  <td>Desviación en pH medido (±0.2 pH)</td>
+                  <td>
+                    Verificar y ajustar con soluciones tampón antes de cada
+                    serie
+                  </td>
+                </tr>
+                <tr>
+                  <td>Temperatura de reacción</td>
+                  <td>Variación en tiempo de disolución y reticulación</td>
+                  <td>Usar baño termostático para mantener 85 °C constante</td>
+                </tr>
+                <tr>
+                  <td>Medición de volumen de reactivos</td>
+                  <td>Diferencias en concentración efectiva (±0.5 mL)</td>
+                  <td>Emplear micropipetas graduadas para mejorar precisión</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small text-muted">
+            Análisis realizado según rúbrica de requisitos de entrega
+            [oai_citation:1‡Indicaciones para la construccipon de la página
+            Web.pdf](file-service://file-H1ukgxteownUPWfcmhemRh).
+          </p>
+        </div>
+        <!-- Conclusiones -->
+        <div class="mb-5">
+          <h3>Conclusiones</h3>
+          <p>
+            La variación de pH altera significativamente la reticulación del
+            PVA-bórax: medios básicos incrementan enlaces cruzados y viscosidad,
+            mientras que medios ácidos reducen reticulación y evitan
+            gelificación. Esto demuestra el papel clave de H₃O⁺ y OH⁻ en la
+            química de equilibrios iónicos y su impacto en propiedades
+            macroscópicas del slime fileciteturn7file1.
+          </p>
+        </div>
+
+        <!-- Referencias -->
+        <div class="mb-5">
+          <h3>Referencias</h3>
+          <ul>
+            <li>
+              Ospina, C. (2001). Equilibrio ácido-base. Editorial X.
+              fileciteturn7file1
+            </li>
+            <li>
+              Simon & Beevers (1952). The Effect of pH on the Biological
+              Activities... The New Phytologist. fileciteturn7file2
+            </li>
+          </ul>
+        </div>
+
+        <!-- Descarga Informe -->
+        <div class="text-center mb-5">
+          <a href="docs/lab3-report.pdf" class="btn btn-primary"
+            >Descargar Informe PDF</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Footer content copied from index.html -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
