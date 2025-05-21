@@ -61,7 +61,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a class="nav-link" href="lab1.html">Lab 1</a>
                     </li>
                     <li class="nav-item">
@@ -73,8 +73,8 @@
                     <li class="nav-item">
                       <a class="nav-link" href="gallery.html">Galería</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Preguntas</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="preguntas.html">Preguntas</a>
                     </li>
                   </ul>
                 </div>
@@ -93,205 +93,145 @@
         background-color: #04978d;
       "
     />
+    <style>
+      .chat-container {
+        max-width: 800px;
+        margin: auto;
+      }
+      .chat-message {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+      }
+      .chat-left {
+        justify-content: flex-start;
+      }
+      .chat-right {
+        justify-content: flex-end;
+      }
+      .chat-message img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .chat-bubble {
+        max-width: 70%;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+        position: relative;
+      }
+      .chat-left .chat-bubble {
+        background: #f1f1f1;
+        margin-left: 0.5rem;
+        border-bottom-left-radius: 0;
+      }
+      .chat-right .chat-bubble {
+        background: #04978d;
+        color: #fff;
+        margin-right: 0.5rem;
+        border-bottom-right-radius: 0;
+      }
+    </style>
+  </head>
+  <body class="main-layout">
+    <header>...</header>
+
     <section class="pt-5 pb-5">
-      <div class="container">
+      <div class="container chat-container">
         <h2 class="text-center mb-4">Preguntas y Respuestas del Proyecto</h2>
-
-        <!-- Lab 1 Q&A -->
-        <div class="mb-5">
-          <h3>Laboratorio 1: Estequiometría y Masa del Slime</h3>
-
-          <!-- Pregunta 1 -->
-          <div class="media mb-4">
-            <img
-              src="images/tett1.png"
-              class="mr-3 rounded-circle"
-              alt="Samuel Ceballos"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Samuel Ceballos pregunta:</h5>
-              ¿Por qué el rendimiento experimental superó el 100 % en todas las
-              muestras?
-            </div>
+        <!-- Lab 1 Chat -->
+        <h3>Laboratorio 1: Estequiometría y Masa del Slime</h3>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Por qué el rendimiento experimental superó el 100 % en todas las
+            muestras?
           </div>
-          <div class="media mb-4">
-            <img
-              src="images/perf4.jpeg"
-              class="mr-3 rounded-circle"
-              alt="Juan David Romero Moreno"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Juan David responde:</h5>
-              El rendimiento excede 100 % principalmente por retención de agua
-              en la red polimérica y posible adición extra de anilina o
-              reactivos; parte del agua no se separó completamente al pesarlo.
-            </div>
-          </div>
-
-          <!-- Pregunta 2 -->
-          <div class="media mb-4">
-            <img
-              src="images/perf2.jpeg"
-              class="mr-3 rounded-circle"
-              alt="Miguel Alejandro Mena"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Miguel Alejandro Mena pregunta:</h5>
-              ¿Cómo se relaciona la masa de PVA con la viscosidad indirecta
-              medida?
-            </div>
-          </div>
-          <div class="media mb-4">
-            <img
-              src="images/perf3.jpeg"
-              class="mr-3 rounded-circle"
-              alt="Agustín Londoño Gonzales"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Agustín Londoño Gonzales responde:</h5>
-              Al aumentar la masa de PVA, hay más cadenas poliméricas
-              disponibles para reticularse, lo que reduce el diámetro de
-              expansión entre placas y aumenta la viscosidad indirecta.
-            </div>
+          <img src="images/tett1.png" alt="Samuel Ceballos" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf2.jpeg" alt="Juan David Romero Moreno" />
+          <div class="chat-bubble">
+            El rendimiento excede 100 % principalmente por retención de agua en
+            la red polimérica y posible adición extra de reactivos.
           </div>
         </div>
-
-        <!-- Lab 2 Q&A -->
-        <div class="mb-5">
-          <h3>Laboratorio 2: Soluciones y Aditivos</h3>
-
-          <!-- Pregunta 1 -->
-          <div class="media mb-4">
-            <img
-              src="images/tett1.png"
-              class="mr-3 rounded-circle"
-              alt="Samuel Ceballos"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Samuel Ceballos pregunta:</h5>
-              ¿Por qué la muestra con limadura de hierro mostró menor
-              deformación bajo presión?
-            </div>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Cómo se relaciona la masa de PVA con la viscosidad indirecta
+            medida?
           </div>
-          <div class="media mb-4">
-            <img
-              src="images/Juan_David.png"
-              class="mr-3 rounded-circle"
-              alt="Juan David Romero Moreno"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Juan David responde:</h5>
-              Las partículas metálicas actúan como carga sólida, reforzando la
-              matriz del slime y distribuyendo mejor la presión, reduciendo
-              deformación.
-            </div>
-          </div>
-
-          <!-- Pregunta 2 -->
-          <div class="media mb-4">
-            <img
-              src="images/Miguel_Alejandro.png"
-              class="mr-3 rounded-circle"
-              alt="Miguel Alejandro Mena"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Miguel Alejandro Mena pregunta:</h5>
-              ¿Cómo evaluamos la fluorescencia del slime bajo UV de forma
-              cuantitativa?
-            </div>
-          </div>
-          <div class="media mb-4">
-            <img
-              src="images/Agustin_Londono.png"
-              class="mr-3 rounded-circle"
-              alt="Agustín Londoño Gonzales"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Agustín Londoño Gonzales responde:</h5>
-              Se midió la intensidad luminosa con un fotómetro portátil,
-              obteniendo lecturas en lux para cada concentración de colorante
-              bajo luz UV.
-            </div>
+          <img src="images/perf3.jpeg" alt="Miguel Alejandro Mena" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf4.jpeg" alt="Agustín Londoño Gonzales" />
+          <div class="chat-bubble">
+            Al aumentar la masa de PVA, hay más cadenas poliméricas para
+            reticularse, reduciendo el diámetro de expansión y aumentando la
+            viscosidad indirecta.
           </div>
         </div>
-
-        <!-- Lab 3 Q&A -->
-        <div class="mb-5">
-          <h3>Laboratorio 3: Influencia del pH</h3>
-
-          <!-- Pregunta 1 -->
-          <div class="media mb-4">
-            <img
-              src="images/tett1.png"
-              class="mr-3 rounded-circle"
-              alt="Samuel Ceballos"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Samuel Ceballos pregunta:</h5>
-              ¿Por qué el slime no se gelificó en pH 3?
-            </div>
+        <!-- Lab 2 Chat -->
+        <h3 class="mt-5">Laboratorio 2: Soluciones y Aditivos</h3>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Por qué la muestra con limadura de hierro mostró menor deformación
+            bajo presión?
           </div>
-          <div class="media mb-4">
-            <img
-              src="images/Juan_David.png"
-              class="mr-3 rounded-circle"
-              alt="Juan David Romero Moreno"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Juan David responde:</h5>
-              En pH ácido predomina H₃O⁺, que compite con el ion boro por los
-              grupos -OH del PVA, evitando la formación de enlaces cruzados
-              necesarios para el gel.
-            </div>
+          <img src="images/tett1.png" alt="Samuel Ceballos" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf2.jpeg" alt="Juan David Romero Moreno" />
+          <div class="chat-bubble">
+            Las partículas metálicas actúan como carga sólida, reforzando la
+            matriz y distribuyendo mejor la presión.
           </div>
-
-          <!-- Pregunta 2 -->
-          <div class="media mb-4">
-            <img
-              src="images/Miguel_Alejandro.png"
-              class="mr-3 rounded-circle"
-              alt="Miguel Alejandro Mena"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Miguel Alejandro Mena pregunta:</h5>
-              ¿Cómo influye un pH básico en la estabilidad del slime a largo
-              plazo?
-            </div>
+        </div>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Cómo evaluamos la fluorescencia del slime bajo UV
+            cuantitativamente?
           </div>
-          <div class="media mb-4">
-            <img
-              src="images/Agustin_Londono.png"
-              class="mr-3 rounded-circle"
-              alt="Agustín Londoño Gonzales"
-              style="width: 60px; height: 60px"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Agustín Londoño Gonzales responde:</h5>
-              El pH básico favorece enlaces cruzados más fuertes, pero a pH muy
-              elevado puede degradar parcialmene el PVA, reduciendo estabilidad
-              con el tiempo.
-            </div>
+          <img src="images/perf3.jpeg" alt="Miguel Alejandro Mena" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf4.jpeg" alt="Agustín Londoño Gonzales" />
+          <div class="chat-bubble">
+            Medimos la intensidad luminosa con un fotómetro portátil,
+            registrando lecturas en lux.
+          </div>
+        </div>
+        <!-- Lab 3 Chat -->
+        <h3 class="mt-5">Laboratorio 3: Influencia del pH</h3>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Por qué el slime no se gelificó en pH 3?
+          </div>
+          <img src="images/tett1.png" alt="Samuel Ceballos" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf2.jpeg" alt="Juan David Romero Moreno" />
+          <div class="chat-bubble">
+            En pH ácido, H₃O⁺ compite con el ion boro por -OH del PVA,
+            impidiendo enlaces cruzados.
+          </div>
+        </div>
+        <div class="chat-message chat-right">
+          <div class="chat-bubble">
+            ¿Cómo influye un pH básico en la estabilidad del slime a largo
+            plazo?
+          </div>
+          <img src="images/perf3.jpeg" alt="Miguel Alejandro Mena" />
+        </div>
+        <div class="chat-message chat-left">
+          <img src="images/perf4.jpeg" alt="Agustín Londoño Gonzales" />
+          <div class="chat-bubble">
+            El pH básico refuerza enlaces cruzados pero, si es muy alto, puede
+            degradar el PVA y reducir estabilidad.
           </div>
         </div>
       </div>
     </section>
-
-    <!-- footer -->
-    <footer>
-      <!-- Copiar footer de index.html -->
-    </footer>
-
+    <footer>...</footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
